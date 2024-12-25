@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <style>
+        .container{
+            border: 5px solid black;
+            border-radius: 10px;
+            background-color: rgb(45, 44, 44);
+            /* /* width: 500px; */
+            height: 400px;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: baseline;
+            flex-wrap: wrap;
+            /* align-content: center; */
+        }
+        .box{
+            border: 5px solid orange;
+            border-radius: 5px;
+            background-color: #ffc967;
+            height: 50px;
+            width: 250px;
+            margin: 2px;
+        }
+        @media(max-width:720px) and (min-width:480px){
+            .container{
+                flex-direction: column;
+            }
+        }
+        @media(min-width:480px){
+            .container{
+                flex-direction: column;
+                background-color: bisque;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Display: Flex</h1>
+  <div class="container" id="flex">
+    <div class="box box1"><h1>1</h1></div>
+    <div class="box box2"><h1>2</h1></div>
+    <div class="box box3"><h1>3</h1></div>
+  </div>
+</body>
+</html>
